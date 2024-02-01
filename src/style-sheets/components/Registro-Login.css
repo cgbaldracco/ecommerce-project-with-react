@@ -1,0 +1,123 @@
+.login-register__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.login-register__form {
+    background-color: var(--clr-slate200);
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.login-register__title {
+    font-size: var(--size-2xl);
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-slate800);
+}
+
+.login-register__subtitle {
+    font-size: var(--size-base);
+    font-weight: 500;
+    text-align: center;
+    color: var(--clr-slate800);
+}
+
+.login-register__input-container {
+    width: 96%;
+    position: relative;
+    display: block;
+    align-items: center;
+}
+
+.login-register__input {
+    width: 89%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: var(--size-xs);
+    background-color: var(--clr-slate400);
+    color: var(--clr-dark);
+    padding: 10px 0px 10px 48px;
+}
+
+input ~ i {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-register__btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.login-register__btn {
+    font-size: var(--size-xs);
+    background-color: var(--clr-sky);
+    box-shadow: 0 5px 10px rgba(14, 165, 233, 0.5), 0 3px 3px rgba(14, 165, 233, 0.5), 0 0 50px -5px var(--clr-sky);
+}
+
+.login__password-reset {
+    font-size: var(--size-xs);
+}
+
+.login-register__redirect {
+    font-size: var(--size-sm);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .login-register__form {
+        width: 450px;
+        margin: 0.7rem;
+        padding: 0.7rem;
+        gap: 0.7rem;
+    }
+
+    .login-register__title {
+        font-size: var(--size-3xl);
+    }
+
+    .login-register__subtitle {
+        font-size: var(--size-xl);
+    }
+
+    .login-register__input-container {
+        width: 100%;
+    }
+    
+    .login-register__input {
+        font-size: var(--size-base);
+    }
+
+    .login-register__btn {
+        font-size: var(--size-base);
+    }
+    
+    .login__password-reset {
+        font-size: var(--size-base);
+    }
+    
+    .login-register__redirect {
+        font-size: var(--size-base);
+    }
+}

@@ -1,0 +1,120 @@
+.producto__container {
+    max-width: 80ch;
+    min-height: 35ch;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--clr-slate100);
+    gap: 0.5rem;
+    border: 0.3rem solid var(--clr-slate600);
+}
+
+.producto__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: var(--clr-dark);
+    font-size: var(--size-xxs);
+}
+
+.content__primaryColor {
+    background-color: var(--clr-slate400);
+}
+
+.content__secondaryColor {
+    background-color: var(--clr-slate200);
+}
+
+.producto__btnContainer {
+    padding-top: 0.3rem;
+}
+
+.producto__btn {
+    font-size: var(--size-xxs);
+}
+
+.producto__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .producto__content {
+        width: 90%;
+        gap: 0.6rem;
+    }  
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .producto__container {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .producto__content {
+        max-width: 60%;
+        font-size: var(--size-xs);
+        margin: 1rem;
+    }
+
+    .producto__btnContainer {
+        padding-top: 0.4rem;
+    }
+
+    .producto__btn {
+        font-size: var(--size-xs);
+    }
+
+    .producto__img-container {
+        min-width: 30%;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .producto__content {
+        gap: 0.8rem;
+        font-size: var(--size-sm);
+    }
+
+    .producto__btnContainer {
+        padding-top: 0.5rem;
+    }
+
+    .producto__btn {
+        font-size: var(--size-sm);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .producto__content {
+        font-size: var(--size-base);
+    }
+    
+    .producto__btnContainer {
+        padding-top: 0.6rem;
+    }
+
+    .producto__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .producto__content {
+        gap: 1rem;
+    }
+}

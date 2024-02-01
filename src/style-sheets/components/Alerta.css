@@ -1,0 +1,18 @@
+.alerta {
+    border-radius: 3px;
+    padding: 3px 4px 3px 4px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.error {
+    color: rgb(rgb(250, 61, 61));
+    background-color: rgb(rgb(255, 105, 105));
+    border: 4px rgb(250, 61, 61);   
+}
+
+.correcto {
+    color: rgb(51, 212, 51);
+    background-color: rgb(114, 212, 114);
+    border: 4px rgb(51, 212, 51);
+}
